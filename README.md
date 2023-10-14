@@ -3,10 +3,13 @@ Olá, Seja Bem Vindo(a)!🤖
 # Descrição
 Projeto tem como finalidade:
   - Cobertura de cenários, casos de testes e escrita de testes em Gherkin;
-  - Iremos automatizar os cenários com Robot Framework;
-  - Sites: [demonEcommerc](https://demo.nopcommerce.com/) & [phptraveks](https://phptravels.org/login)
+  - Automação dos cenários com Robot Framework 🤖;
+  - Sites da automação Front-End: [demonEcommerc](https://demo.nopcommerce.com/) & [phptraveks](https://phptravels.org/login);
+  - Site da automação Back-End:  [ServerRest](https://serverest.dev/);
 # Pré-requisitos 
-É necessário que você garanta que os requisitos necessários estejam instalados em seu computador.                   
+É necessário que você garanta que os requisitos necessários estejam instalados em seu computador. 
+  - [Visual Studio Code](https://code.visualstudio.com/download) (versão utilizada 1.38.1);
+  - [Git](https://git-scm.com/downloads) (versão utilizada 2.42.0.windows.2);
   - [Python](https://www.python.org/downloads/) (versão utilizada 3.11.5, mas pode usar a autal 3.12.0);
   - [RobotFramework](https://robotframework.org/?tab=1#getting-started) (versão utilizada 6.1.1);
   - [Chromedriver](https://chromedriver.chromium.org/) (versão utilizada 116.0);
