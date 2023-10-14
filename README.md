@@ -18,4 +18,4 @@ Projeto tem como finalidade:
 
 **OBS 3:** Deixarei um passo a passo para instalação de cada um dos requisitos. 
 
-Vá para seção de passo a passo.
+Vá para seção de [Passo a Passo](https://github.com/VinSouss/Automacao-Front-End-Back-End/blob/main/0.md).
