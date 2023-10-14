@@ -15,10 +15,10 @@ Projeto tem como finalidade:
   - [Chromedriver](https://chromedriver.chromium.org/) (versão utilizada 116.0);
   - [Libraries do Robot Framework](https://robotframework.org/?tab=libraries#resources) (Collections, DateTime, DebugLibrary, RequestsLibrary, SeleniumLibrary, String);
 
-**OBS 1:** É recomendado que você siga a ordem da lista abaixo para que não ocorra nenhum conflito e tudo ocorra como o esperado!
+    **OBS 1:** É recomendado que você siga a ordem da lista abaixo para que não ocorra nenhum conflito e tudo ocorra como o esperado!
 
-**OBS 2:** Na lista de requisitos acima, deixei os links para encontrar os instaladores.
+    **OBS 2:** Na lista de requisitos acima, deixei os links para encontrar os instaladores.
 
-**OBS 3:** Deixarei um passo a passo para instalação de cada um dos requisitos. 
+    **OBS 3:** Deixarei um passo a passo para instalação de cada um dos requisitos. 
 
 Vá para seção de [Passo a Passo](https://github.com/VinSouss/Automacao-Front-End-Back-End/blob/main/0.md).
