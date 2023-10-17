@@ -4,7 +4,7 @@ Olá, Seja Bem Vindo(a)!🤖
 Projeto tem como finalidade:
   - Cobertura de cenários, casos de testes e escrita de testes em Gherkin;
   - Automação dos cenários com Robot Framework 🤖;
-  - Sites da automação Front-End: [demonEcommerc](https://demo.nopcommerce.com/) & [phptraveks](https://phptravels.org/login);
+  - Sites da automação Front-End: [demonEcommerc](https://demo.nopcommerce.com/);
   - Site da automação Back-End:  [ServerRest](https://serverest.dev/);
 # Pré-requisitos 
 É necessário que você garanta que os requisitos necessários estejam instalados em seu computador. 
