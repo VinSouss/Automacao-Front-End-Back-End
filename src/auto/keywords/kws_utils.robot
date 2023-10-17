@@ -2,6 +2,9 @@
 Documentation        Keyword de utilidade do projeto
 Resource             ../../../src/config/main.resource
 
+*** Variables ***
+@{months}    Janeiro    Fevereiro    Março    Abril    Maio    Junho    Julho    Agosto    Setembro    Outubro    Novembro    Dezembro
+
 *** Keywords ***
 que o usuário esteja na tela de Home do nopCommerce
     Title Should Be                   ${pg_home.title}
@@ -16,21 +19,24 @@ Massa de Testes Aleatórias
     Set Global Variable                ${LastName_TEST}                  ${LASTNAME_RANDOM}
         
     Set Global Variable                ${Email_TEST}                     ${FirstName_TEST}${LastName_TEST}@emailtest.com
+    
     ${COMPANY_RANDOM}                  Generate Random String            length=7            chars=[LETTERS]
     Set Global Variable                ${Company_TEST}                   ${COMPANY_RANDOM}
 
-    Log    ${EMAIL_TEST}, ${FirstName_TEST},${LastName_TEST}, ${Company_TEST}
-
 Generate Random Day
-    ${days} =  Evaluate  random.randint(1, 31)
+    ${days} =      Evaluate      random.randint(1, 31)
     [Return]    ${days}
-Generate Random Year
-    ${year} =  Evaluate    random.randint(1931, 2023)
-    [Return]    ${year}  
-
 Generate Random Month
-   ${month} =  Evaluate    random.randint(1, 10)
-   [Return]    ${month} 
+    ${months} =      Evaluate      random.randint(1, 12)
+    [Return]    ${months}
+
+Generate Random Year   
+    ${year} =      Evaluate      random.randint(1931, 2023)
+    [Return]    ${year} 
+
+Deletar todas as sessões
+    Delete All Sessions
+
 
 #Config tela
     #Wait Until is Visible                TelaInformesInicio.png                timeout=${TIMEOUT.ULTRA}

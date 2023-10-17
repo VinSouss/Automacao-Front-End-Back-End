@@ -14,12 +14,18 @@ preenche os campos com email inválido
     Wait Until Element Is Visible        css=${pg_Registro.input_lastName}          ${TIMEOUT.MINIMAL}  
     Input Text                           css=${pg_Registro.input_lastName}          ${LastName_TEST}
     Wait Until Element Is Visible        css=${pg_Registro.select_day}              ${TIMEOUT.MINIMAL}  
-    Select From List By Value            css=${pg_Registro.select_day}              28
-    Wait Until Element Contains          css=${pg_Registro.day_option_28}           28
-    Select From List By Value            css=${pg_Registro.select_month}            10
-    Wait Until Element Contains          css=${pg_Registro.month_option_10}         October
-    Select From List By Value            css=${pg_Registro.select_year}             1999
-    Wait Until Element Contains          css=${pg_Registro.year_option_1999}        1999
+    ${days} =                            Run Keyword                                Generate Random Day
+    Wait Until Element Is Visible        css=${pg_Registro.select_day}              ${TIMEOUT.MINIMAL}  
+    Select From List By Value            css=${pg_Registro.select_day}              ${days}
+    Wait Until Element Contains          xpath=//select[@name="DateOfBirthDay"]/option[text()="${days}"]         ${days}  
+    ${months} =                          Run Keyword                                Generate Random Month
+    Select From List By Value            css=${pg_Registro.select_month}            ${months}
+    ${option_xpath} =    Set Variable    //select[@name="DateOfBirthMonth"]/option[@value="${months}"]
+    ${months} =                          Get Text                                   ${option_xpath}
+    [Return]    ${months}
+    ${year} =                            Run Keyword                                Generate Random Year
+    Select From List By Value            css=${pg_Registro.select_year}             ${year}
+    Wait Until Element Contains          xpath=//select[@name="DateOfBirthYear"]/option[text()="${year}"]         ${year}
     Wait Until Element Is Visible        css=${pg_Registro.input_email}             ${TIMEOUT.MINIMAL}  
     Input Text                           css=${pg_Registro.input_email}             teste@teste
     Wait Until Element Is Visible        css=${pg_Registro.input_nameCompany}       ${TIMEOUT.MINIMAL}        

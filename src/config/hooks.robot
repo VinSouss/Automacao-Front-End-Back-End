@@ -22,3 +22,12 @@ Fechar navegador
     Captura da tela    
     Close Browser
 
+
+Criar Sessão na ServerRest
+    ${headers}    Create Dictionary    
+    ...    accept=application/json    
+    ...    Content-Type=application/json
+    Create Session    alias=ServeRest    url=https://serverest.dev    headers=${headers}
+
+    Set Global Variable    ${headers}
+

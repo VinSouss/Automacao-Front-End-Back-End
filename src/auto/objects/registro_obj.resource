@@ -18,10 +18,6 @@ Documentation    Todos os objetos da página de registro.
 ...    input_confirmPassword=input[type="password"][id="ConfirmPassword"]
 ...    btn_register=button[type="submit"][id="register-button"]
 ...    message_sucess=div[class="result"]
-#...    options
-...    day_option_28=select[name="DateOfBirthDay"] option[value="28"]
-...    month_option_10=select[name="DateOfBirthMonth"] option[value="10"]
-...    year_option_1999=select[name="DateOfBirthYear"] option[value="1999"]
 #...    inválido
 ...    span_firstName=span[id="FirstName-error"]
 ...    span_lastName=span[id="LastName-error"]
@@ -30,3 +26,12 @@ Documentation    Todos os objetos da página de registro.
 ...    span_confirmPassword=span[id="ConfirmPassword-error"]
 ...    alert_errorEmail=div[class="message-error validation-summary-errors"]
 ...    alert_validacaoConfirmPassword=span[class="field-validation-error"]
+#...   Massa de dados
+...    Masculino=M
+...    Feminino=F     
+...    fistName=Teste
+...    lasName=Jr
+...    email=TesteJr@emailteste.com
+...    company=Company Teste
+...    passoword=test3*
+...    confirmPassword=test3*

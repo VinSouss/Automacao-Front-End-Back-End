@@ -8,7 +8,7 @@ Suite Teardown    Fechar navegador
 
 
 *** Test Cases ***
-Cenário 1: [Registro] Registro com senha inválida.
+Cenário 1: [Registro] Registro com email inválida.
     [Tags]    email_inv
     Dado  que o usuario esteja na tela de registro
     Quando  preenche os campos com email inválido
