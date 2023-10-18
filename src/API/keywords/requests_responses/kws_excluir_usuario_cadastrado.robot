@@ -13,7 +13,7 @@ realizo uma exclusão DELETE para a rota "//serverest.dev/usuarios/_id"
     ...    url=/usuarios/${_idUSUARIO}
     ...    expected_status=200
     
-    Set Global Variable    ${RESP_Exclusao}    ${response_exclusao.json()}
+    Set Global Variable               ${RESP_Exclusao}    ${response_exclusao.json()}
 
 a resposta deve conter uma mensagem "Registro excluído com sucesso"
     Log    ${RESP_Exclusao}

@@ -28,9 +28,20 @@ Resource         ../../src/auto/keywords/nopCommerce/Registro/kws_campos_obrigat
 Resource         ../../src/auto/keywords/nopCommerce/Registro/kws_email_invalido.robot
 Resource         ../../src/auto/keywords/nopCommerce/Registro/kws_senha_invalida.robot
 Resource         ../../src/auto/keywords/nopCommerce/Registro/kws_confirmacao_senha_invalida.robot
+Resource         ../../src/auto/keywords/nopCommerce/Login/kws_login_sucesso.robot
+Resource         ../../src/auto/keywords/nopCommerce/Compras/kws_compra_sucesso.robot
+Resource         ../../src/auto/keywords/nopCommerce/Compras/kws_pesquisa_sucesso.robot
+
+
 
 
 
 #Objects
 Resource         ../auto/objects/home_obj.resource
 Resource         ../auto/objects/registro_obj.resource
+Resource         ../auto/objects/login_obj.resource
+Resource         ../auto/objects/pesquisa_obj.resource
+Resource         ../auto/objects/compras_obj.resource
+Resource         ../auto/objects/checkout_obj.resource
+
+

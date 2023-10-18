@@ -18,7 +18,6 @@ Documentation    Todos os objetos da página de registro.
 ...    input_confirmPassword=input[type="password"][id="ConfirmPassword"]
 ...    btn_register=button[type="submit"][id="register-button"]
 ...    message_sucess=div[class="result"]
-#...    inválido
 ...    span_firstName=span[id="FirstName-error"]
 ...    span_lastName=span[id="LastName-error"]
 ...    span_email=span[id="Email-error"]
@@ -26,7 +25,6 @@ Documentation    Todos os objetos da página de registro.
 ...    span_confirmPassword=span[id="ConfirmPassword-error"]
 ...    alert_errorEmail=div[class="message-error validation-summary-errors"]
 ...    alert_validacaoConfirmPassword=span[class="field-validation-error"]
-#...   Massa de dados
 ...    Masculino=M
 ...    Feminino=F     
 ...    fistName=Teste
